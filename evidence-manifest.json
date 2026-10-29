@@ -1458,6 +1458,13 @@
       "scope": "Sanitized derivative, not byte-identical to the private original."
     },
     {
+      "sourceFilename": "provider-preservation-verify-20261029T232234473Z-result.json",
+      "originalPrivateEvidenceSha256": "7abb4b0f8b0de9b6baa7d7bb8d9799e1777b8a670cba0dd402ed8bcafd816695",
+      "publishedFile": "raw-output/provider-preservation-verify-20261029T232234473Z-result.json",
+      "publishedSanitizedSha256": "c35d5ff8e1ea8c427a960c4a628f42a7f888962653600101128ff719504d27af",
+      "scope": "Sanitized derivative, not byte-identical to the private original."
+    },
+    {
       "sourceFilename": "public-probe-return-guard-20261029T212416233Z-result.json",
       "originalPrivateEvidenceSha256": "55b22ef85e5558173a221b73b63d70b7ac145be054360187c06585de50a86c0b",
       "publishedFile": "raw-output/public-probe-return-guard-20261029T212416233Z-result.json",

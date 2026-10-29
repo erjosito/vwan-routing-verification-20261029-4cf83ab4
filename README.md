@@ -2,7 +2,7 @@
 
 **Scoped evidence, not Azure certification.** This two-region lab compared the browser-only [Virtual WAN Topology Lab](https://github.com/erjosito/vwan-visual-topology) with real Azure route selection, advertisements and endpoint forwarding on 2026-10-29.
 
-Testing is complete. **Cleanup is authorized and pending verification** at this initial publication; the final cleanup evidence will be added below. The production simulator is not part of the disposable lab.
+Testing is complete. **All six owned provider products are decommissioned; Azure cleanup is running.** The 72 unrelated provider product identities/states were independently verified unchanged before the lab resource-group deletion was submitted. Final Azure cleanup evidence will be added below. The production simulator is not part of the disposable lab.
 
 The durable work log, original prediction commitments and investigation history are in [erjosito/vwan-visual-topology#5](https://github.com/erjosito/vwan-visual-topology/issues/5). Testing lessons are maintained in the application repository's [AZURE-TESTING-LESSONS.md](https://github.com/erjosito/vwan-visual-topology/blob/main/AZURE-TESTING-LESSONS.md).
 
@@ -95,7 +95,7 @@ Predictions were frozen and publicly committed before the corresponding observat
 
 [`evidence-manifest.json`](evidence-manifest.json) distinguishes **original private byte hashes** from **published sanitized byte hashes**. Embedded `predictionSha256` values are original commitments, not hashes of redacted derivatives. Azure/account identifiers use consistent aliases; credentials, vault identity, local user paths, raw encoded RunCommand envelopes and unrelated provider inventory are not published.
 
-Latest routing fix: `7ff490f71906a51a737ce10894cf58a850edd6d0`; 63 routing tests, lint, build and all 16 unchanged original I flow predictions passed. Full [CI/deployment 40952291449](https://github.com/erjosito/vwan-visual-topology/actions/runs/40952291449) passed. Published lessons at `1bb6ac47fac2f690b9a27d986479a345b8fabde5` also passed [full CI/deployment 40958484884](https://github.com/erjosito/vwan-visual-topology/actions/runs/40958484884).
+Latest routing fix: `7ff490f71906a51a737ce10894cf58a850edd6d0`; 63 routing tests, lint, build and all 16 unchanged original I flow predictions passed. Full [CI/deployment 40952291449](https://github.com/erjosito/vwan-visual-topology/actions/runs/40952291449) passed. Final published lessons/report links at `d53f3e635dcd76a5149819c6973e80ed07f0e65e` also passed [full CI/deployment 40968720949](https://github.com/erjosito/vwan-visual-topology/actions/runs/40968720949).
 
 A best-effort portal screenshot attempt used an isolated browser context with no token/profile reuse. Authentication was unavailable, so no portal screenshot is presented as evidence. Actual Azure CLI/API results are authoritative.
 
@@ -153,7 +153,9 @@ No Google resources were created. Teardown must begin by hour42, with hard lifet
 
 Cleanup inventory: 89 enumerated task-owned Azure resources, four ER attachments, two circuit peerings and six owned provider products. Only two recorded external secret-read role assignments and the owned vault private-endpoint connection may be removed outside the lab resource group. The pre-existing vault, production app and unrelated provider resources must be preserved. A private baseline covers **72 unrelated product IDs/states, including nested VXCs**.
 
-**Current cleanup status: not yet executed at initial publication.** Planned order: ER connections, private peerings, owned VXCs, owned MCRs, verify unrelated-provider preservation and retain proof locally, then delete the owned resource group and exact external remnants. Final observed cleanup status will replace this paragraph.
+**Provider cleanup verified at 2026-10-29 23:23 UTC:** four ER connections and both private peerings were removed before the four VXCs and two MCRs. An independent [preservation check](raw-output/provider-preservation-verify-20261029T232234473Z-result.json) confirmed all six owned products `DECOMMISSIONED` and all 72 unrelated recursive product identities/states unchanged. Proof was retained locally before dismantling the credential path. No unrelated inventory is published.
+
+The owned Azure resource-group deletion was accepted at 23:23:54 UTC after refreshing ownership for all 87 remaining enumerated resources (zero unknown resources); actual state was `Deleting`. Final group absence and exact external grant/endpoint removal remain pending verification. The pre-existing vault's public access remained disabled at submission.
 
 ## Editable diagrams and icon attribution
 
