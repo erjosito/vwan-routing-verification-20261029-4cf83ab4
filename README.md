@@ -2,7 +2,7 @@
 
 **Scoped evidence, not Azure certification.** This two-region lab compared the browser-only [Virtual WAN Topology Lab](https://github.com/erjosito/vwan-visual-topology) with real Azure route selection, advertisements and endpoint forwarding on 2026-10-29.
 
-Testing is complete. **All six owned provider products are decommissioned; Azure cleanup is running.** The 72 unrelated provider product identities/states were independently verified unchanged before the lab resource-group deletion was submitted. Final Azure cleanup evidence will be added below. The production simulator is not part of the disposable lab.
+**Testing and owned-resource cleanup are complete.** Final Azure verification at 2026-10-30 00:26 UTC confirmed the lab group absent, zero remaining run-tagged resources, and the recorded external access remnants absent. All six owned provider products were decommissioned; the 72 unrelated provider product identities/states were independently verified unchanged before deleting the credential path. The production simulator remains available and was not part of the disposable lab.
 
 The durable work log, original prediction commitments and investigation history are in [erjosito/vwan-visual-topology#5](https://github.com/erjosito/vwan-visual-topology/issues/5). Testing lessons are maintained in the application repository's [AZURE-TESTING-LESSONS.md](https://github.com/erjosito/vwan-visual-topology/blob/main/AZURE-TESTING-LESSONS.md).
 
@@ -95,7 +95,7 @@ Predictions were frozen and publicly committed before the corresponding observat
 
 [`evidence-manifest.json`](evidence-manifest.json) distinguishes **original private byte hashes** from **published sanitized byte hashes**. Embedded `predictionSha256` values are original commitments, not hashes of redacted derivatives. Azure/account identifiers use consistent aliases; credentials, vault identity, local user paths, raw encoded RunCommand envelopes and unrelated provider inventory are not published.
 
-Latest routing fix: `7ff490f71906a51a737ce10894cf58a850edd6d0`; 63 routing tests, lint, build and all 16 unchanged original I flow predictions passed. Full [CI/deployment 40952291449](https://github.com/erjosito/vwan-visual-topology/actions/runs/40952291449) passed. Final published lessons/report links at `d53f3e635dcd76a5149819c6973e80ed07f0e65e` also passed [full CI/deployment 40968720949](https://github.com/erjosito/vwan-visual-topology/actions/runs/40968720949).
+Latest routing fix: `7ff490f71906a51a737ce10894cf58a850edd6d0`; 63 routing tests, lint, build and all 16 unchanged original I flow predictions passed. Full [CI/deployment 40952291449](https://github.com/erjosito/vwan-visual-topology/actions/runs/40952291449) passed. Published lessons/report links at `d53f3e635dcd76a5149819c6973e80ed07f0e65e` also passed [full CI/deployment 40968720949](https://github.com/erjosito/vwan-visual-topology/actions/runs/40968720949). Final observed cleanup pitfalls are documented in lessons follow-up `943cda566b8e20b0499a3cc928450ee2a8ff30c5` ([CI/deployment](https://github.com/erjosito/vwan-visual-topology/actions/runs/40979825822)).
 
 A best-effort portal screenshot attempt used an isolated browser context with no token/profile reuse. Authentication was unavailable, so no portal screenshot is presented as evidence. Actual Azure CLI/API results are authoritative.
 
@@ -149,13 +149,15 @@ Use Ubuntu StrongSwan/BIRD with controlled unique and common advertisements; mea
 
 The approved Azure ceiling was **USD1,500**, with Google target zero. The lower USD1,000 operating plan was retained. The conservative full-48-hour planning bound was USD941.25 including USD191.25 provider exposure; these are **bounds, not accrued invoices**. Six exact-owned cancellation quotes retrieved at 22:11 UTC had non-null zero cancellation totals and contract payouts; they do not waive recurring charges.
 
-No Google resources were created. Teardown must begin by hour42, with hard lifetime48h. An independent VM timer remained active and unchanged; a separate early-cleanup copy passed nine actual Ubuntu guard tests and deliberately retains the root VM/private credential path until provider proof is retained locally.
+No Google resources were created. Teardown began well before the hour42 trigger and finished before the 48-hour hard deadline. The independent VM timer was unchanged until its disposable VM was deleted. A separate early-cleanup copy passed nine actual Ubuntu guard tests and retained the root VM/private credential path until provider proof was verified and retained locally; the accepted Azure operation then continued independently, with caller-side completion checks.
 
 Cleanup inventory: 89 enumerated task-owned Azure resources, four ER attachments, two circuit peerings and six owned provider products. Only two recorded external secret-read role assignments and the owned vault private-endpoint connection may be removed outside the lab resource group. The pre-existing vault, production app and unrelated provider resources must be preserved. A private baseline covers **72 unrelated product IDs/states, including nested VXCs**.
 
 **Provider cleanup verified at 2026-10-29 23:23 UTC:** four ER connections and both private peerings were removed before the four VXCs and two MCRs. An independent [preservation check](raw-output/provider-preservation-verify-20261029T232234473Z-result.json) confirmed all six owned products `DECOMMISSIONED` and all 72 unrelated recursive product identities/states unchanged. Proof was retained locally before dismantling the credential path. No unrelated inventory is published.
 
-The owned Azure resource-group deletion was accepted at 23:23:54 UTC after refreshing ownership for all 87 remaining enumerated resources (zero unknown resources); actual state was `Deleting`. Final group absence and exact external grant/endpoint removal remain pending verification. The pre-existing vault's public access remained disabled at submission.
+The owned Azure resource-group deletion was submitted after a 23:23 UTC ownership check for all 87 remaining enumerated resources (zero unknown resources). **Final cleanup verification completed at 2026-10-30 00:26:31 UTC:** the group is absent, zero run-tagged Azure resources remain, both recorded external read grants and the owned vault endpoint connection are absent, and the owned group Contributor assignment is absent. The pre-existing vault still exists with public access `Disabled`; the production app returned HTTP200. The [final combined cleanup proof](raw-output/cleanup-verification-public.json) also rechecks all eight original I/J prediction hashes unchanged.
+
+No active task-owned Azure/provider resources remain. Actual accrued invoices have not been reconciled and may arrive later; no zero-spend or recurring-charge-waiver claim is made.
 
 ## Editable diagrams and icon attribution
 

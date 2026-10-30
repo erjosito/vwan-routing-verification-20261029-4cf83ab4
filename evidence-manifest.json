@@ -219,6 +219,13 @@
       "scope": "Sanitized derivative, not byte-identical to the private original."
     },
     {
+      "sourceFilename": "cleanup-verification-public.json",
+      "originalPrivateEvidenceSha256": "667da2cad0b3ef9c522acef2a9a6d37c392d7c691a6b6724fe1648d9ba09c0d9",
+      "publishedFile": "raw-output/cleanup-verification-public.json",
+      "publishedSanitizedSha256": "667da2cad0b3ef9c522acef2a9a6d37c392d7c691a6b6724fe1648d9ba09c0d9",
+      "scope": "Sanitized derivative, not byte-identical to the private original."
+    },
+    {
       "sourceFilename": "controller-safety-I-COMBINED-20261029T2203-result.json",
       "originalPrivateEvidenceSha256": "a7dcb7aa0056e08ef8776f1d558a60da8e757207b26c98348af4c30521ab99bb",
       "publishedFile": "raw-output/controller-safety-I-COMBINED-20261029T2203-result.json",
